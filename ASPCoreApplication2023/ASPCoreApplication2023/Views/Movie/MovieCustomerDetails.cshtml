@@ -1,0 +1,15 @@
+﻿@model ASPCoreApplication2023.Models.MovieCustomerViewModel
+
+<h1>Movie Details</h1>
+
+<h2>Movie:</h2>
+<p>Movie ID: @Model.Movie.Id</p>
+<p>Movie Name: @Model.Movie.Name</p>
+
+<h2>Customers:</h2>
+<ul>
+    @foreach (var customer in Model.Customers)
+    {
+        <li>Customer ID: @customer.Id, Customer Name: @customer.Name</li>
+    }
+</ul>
